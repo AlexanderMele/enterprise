@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIM Enterprise</title>
+    <!--Tailwind-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--CSS-->
+   <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    
+    <header class="bg-blue-900 text-white sticky top-0 z-50 py-4 ">
+        <div class="container mx-10 flex justify-between items-center">
+            <div class="text-sm">
+                <a href="#" class="hover:underline inline-flex items-center">
+                    Gruppo TIM
+                    <svg class="ml-2 w-4 h-4 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
+            </div>
+            <nav class="flex-1">
+                <ul class="flex justify-center space-x-4 text-xs">
+                    <li class="group">
+                        <a href="#" class="menu-item inline-flex items-center hover:text-yellow-200">
+                            PRIVATI
+                        </a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="menu-item inline-flex items-center hover:text-yellow-200">
+                            P.IVA e PMI
+                        </a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="menu-item inline-flex items-center hover:text-yellow-200">
+                            AZIENDE E PA
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Nav -->
+
+    <header class="bg-white text-blue-900   sticky top-12 z-40 text-sm">
+        <div class="  flex justify-between items-center">
+            <!-- Logo TIM Enterprise -->
+            <div class="flex items-center mx-12">
+                <img src="/img/Logo.png" alt="TIM Enterprise" class="h-5">
+            </div>
+
+            <!-- Menu principale -->
+            <nav>
+                <ul class="flex  space-x-4 items-center ">
+                    <!-- Voce di menu "Chi Siamo" -->
+                    <li>
+                        <a href="#" class="hover:text-red-500 flex items-center text-lg">
+                            Chi Siamo
+                        </a>
+                    </li>
+                    
+
+                    <!-- Voce di menu con dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="hover:underline hover:text-red-500 flex items-center text-lg dropdown-trigger" aria-haspopup="true">
+                            Connectivity
+                            <svg class="ml-1 w-3 h-3 transform transition-transform"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <!-- Dropdown menu "Connectivity" -->
+                        <div id="dropdown-connectivity" class="  submenu fixed mt-32 place-items-start mt-11 min-w-full h-96 bg-blue-900 text-white shadow-lg rounded-md p-4">
+                            <div class="flex w-3/4">
+                                <div class="w-1/2">
+                                    <h1 class="text-xl mt-3 mb-4">Connectivity</h1>
+                                    <h3 class="mb-2">TIM SD WAN</h3>
+                                    <p>La tecnologia di ultima generazione al servizio di aziende pubbliche e private.<a href="#" class="underline">Scopri di più</a></p>
+                                    <img src="/img/dropdown-1.png" alt="Immagine" class="mr-4 mt-6">
+                                </div>
+                                <div class="w-3/4 flex ml-16">
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Rete fissa</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Rete mobile</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Linea internazionale</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Managed and Professional Services</a></li>
+                                    </ul>
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700"></a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+
+                    <!-- Voce di menu con dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="hover:underline hover:text-red-500 flex items-center text-lg dropdown-trigger">
+                            Cloud
+                            <svg class="ml-1 w-3 h-3 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 d="M19 9l-7 7-7-7" />
+                       </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-connectivity" class="submenu fixed mt-32  mt-11 w-screen h-96 bg-blue-900 text-white shadow-lg rounded-md p-4">
+                            <div class="flex w-3/4">
+                                <div class="w-1/2">
+                                <h1 class="text-xl mt-e mb-4">Cloud</h1>
+                                <h3 class="mb-2">TIM E SALESFORCE</h3>
+                                <p>Le soluzioni di CRM per il supporto digitale di Aziende e Pubblica Amministrazione.<a href="#" class="underline">Scopri di più</a></p>
+
+                                <img src="/img/dropdown-2.png" alt="Immagine" class=" mr-4 mt-6 ">
+                            </div>
+                                <div class="w-3/4 flex ml-16">
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Data Center</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Cloud Infrastructure</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Servizi di collaborazione</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Cloud Application</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Artificial Intelligence</a></li>
+                                    </ul>
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Managed and Professional Services</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Trusted Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Voce di menu con dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="hover:underline hover:text-red-500 flex items-center text-lg dropdown-trigger">
+                            Cybersecurity
+                            <svg class="ml-1 w-3 h-3 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 d="M19 9l-7 7-7-7" />
+                       </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-connectivity" class="submenu fixed mt-32  mt-11 w-screen h-96 bg-blue-900 text-white shadow-lg rounded-md p-4">
+                            <div class="flex w-3/4">
+                                <div class="w-1/2">
+                                <h1 class="text-xl mt-3 mb-4">Cybersecurity</h1>
+                                <h3 class="mb-2">PENETRATION TEST</h3>
+                                <p>Più sicurezza per la tua rete aziendale grazie agli strumenti di TIM Enterprise.<a href="#" class="underline">Scopri di più</a></p>
+                                <img src="/img/dropdown-3.png" alt="Immagine" class=" mr-4 mt-6 ">
+                            </div>
+                                <div class="w-3/4 flex ml-16">
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Network Security</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Cloud Security</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Managed Security Services</a></li>
+                                    </ul>
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700"></a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Voce di menu con dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="hover:underline hover:text-red-500 flex items-center text-lg dropdown-trigger">
+                            5G e IoT
+                            <svg class="ml-1 w-3 h-3 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 d="M19 9l-7 7-7-7" />
+                       </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-connectivity" class="submenu fixed mt-32  mt-11 w-screen h-96 bg-blue-900 text-white shadow-lg rounded-md p-4">
+                            <div class="flex w-3/4">
+                                <div class="w-1/2">
+                                <h1 class="text-xl mt-3 mb-4 ">5g e IoT</h1>
+                                <h3 class=" mb-2">TIM URBAN GENIUS</h3>
+                                <p>Tecnologie avanzate per la gestione di sistemi complessi come le grandi città.<a href="#" class="underline">Scopri di più</a></p>
+
+                                <img src="/img/dorpdown-4.png" alt="Immagine" class=" mr-4 mt-6 ">
+                            </div>
+                                <div class="w-3/4 flex ml-16">
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Connettività IoT e 5G</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Smart City</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Data Monetization</a></li>
+                                    </ul>
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700"></a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700"> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Voce di menu con dropdown -->
+                    <li class="relative group">
+                        <a href="#" class="hover:underline hover:text-red-500 flex items-center text-lg  dropdown-trigger">
+                            Verticali
+                            <svg class="ml-1 w-3 h-3 transform transition-transform"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 d="M19 9l-7 7-7-7" />
+                       </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-connectivity" class="submenu fixed mt-32   w-screen h-96 bg-blue-900 text-white shadow-lg rounded-md p-4">
+                            <div class="flex w-3/4">
+                                <div class="w-1/2">
+                                <h1 class="text-xl mt-3 mb-5">Verticali</h1>
+                                <h3 class="mb-2">TIM E-VENT PLATFORM</h3>
+                                <p>Nuove modalità per fruire e vivere eventi phygital o totalmente digitali.<a href="#" class="underline">Scopri di più</a></p>
+
+                                <img src="/img/dropdown-5.png" alt="Immagine" class=" mr-4 mt-6 ">
+                            </div>
+                                <div class="w-3/4 flex ml-16">
+                                    <ul class="w-1/2">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Industry 4.0</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Pubblica Amministrazione</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Smart Agriculture</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Finance</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Retail</a></li>
+                                    </ul>
+                                    <ul class="w-1/2 ml-3">
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Sanità Digitale</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Cultura, Turismo, Intrattenimento</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Scuola Digitale</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Transportation & Logistics</a></li>
+                                        <li><a href="#" class="block px-2 py-1 hover:bg-blue-700 mt-3">Energy & Utilities 4.0</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Voce di menu "Blog" -->
+                    <li class="relative group">
+                        <a href="#" class="hover:text-red-500 flex items-center text-lg">
+                            Blog
+                        </a>
+                        
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <!-- Voce di menu "Cerca" -->
+                    <li class="relative">
+                        <a href="#" class="flex font-bold items-center px-3 text-md py-2">
+                            CERCA
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000F5">
+                                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                            </svg>                        
+                        </a>
+                    </li>
+                    
+                    <!-- Voce di menu "Area Clienti" -->
+                    <li class="relative group">
+                        <div class="flex items-center bg-blue-900 text-white  px-8 py-6">
+                            <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c3.75 0 5.5 2 5.5 3.5s-1.75 3.5-5.5 3.5S6.5 19.5 6.5 18s1.75-3.5 5.5-3.5zm0-6a3 3 0 100-6 3 3 0 000 6z" />
+                            </svg>
+                            <a href="#" class="hover:underline font-bold text-md">Area Clienti</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center hero" style="background-image: url('img/Mask group.png');">
+        <div class="container mx-auto flex flex-col justify-center h-full text-center text-white">
+            <h1 class="text-6xl md:text-8xl italic mb-4">Connectivity</h1>
+            <p class="text-md md:text-md mb-8">
+                La connettività di TIM <b>sicura, flessibile e affidabile</b> con le migliori <b>soluzioni digitali</b>
+            </p>
+            <a href="#" class="inline-block mx-auto w-60 bg-gradient-to-br from-blue-700 to-red-600 hover:from-blue-800 hover:to-red-700 text-white font-bold py-2 px-6 md:px-4 rounded">
+                Richiedi Contatto
+            </a>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section class="bg-gray-200">
+        <div class="py-24 sm:py-32 relative">
+            <h1 class="mb-8 text-blue-900 text-3xl flex justify-center items-center">Tutte le nostre soluzioni</h1>
+    
+            <!-- Freccia per tornare indietro (sinistra) -->
+            <button id="prevButton" class="bg-blue-500 text-white rounded-full w-10 h-10 mb-2 flex justify-center items-center absolute left-0 top-1/2 transform -translate-y-1/2">
+                <svg class="w-4 h-4 transform rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.53.22l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L13.94 10 9.22 5.28a.75.75 0 01.53-1.28z" clip-rule="evenodd" />
+                </svg>
+            </button>
+    
+            <!-- Freccia per andare avanti (destra) -->
+            <button id="nextButton" class="bg-blue-500 text-white rounded-full w-10 h-10 flex justify-center items-center absolute right-0 top-1/2 transform -translate-y-1/2">
+                <svg class="w-4 h-4 transform rotate-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.53.22l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L13.94 10 9.22 5.28a.75.75 0 01.53-1.28z" clip-rule="evenodd" />
+                </svg>
+            </button>
+    
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 relative">
+                <div id="cardContainer" class="flex space-x-8 overflow-x-auto scrollbar-hidden">
+                    <!-- Card 1 -->
+                    <article class="card bg-white shadow-lg rounded-lg overflow-hidden flex-shrink-0 w-96 cardh">
+                        <img src="img/Mask group copia.png" alt="Esempio 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold leading-6 text-gray-900">Rete Fissa</h3>
+                            <p class="mt-2 text-sm leading-6 text-gray-600">Ampia gamma di servizi in fibra sicura, flessibile e affidabile, per connessioni ultraveloci dedicate ad aziende e Pubblica Amministrazione.</p>
+                            <button class="mt-4 custom-button text-blue-700 py-2 px-4 flex items-center rounded-full">
+                                Scopri di più
+                                <svg class="w-4 h-4 ml-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+    
+                    <!-- Card 2 -->
+                    <article class="card bg-white shadow-lg rounded-lg overflow-hidden flex-shrink-0 w-96">
+                        <img src="img/Mask group-2.png" alt="Esempio 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold leading-6 text-gray-900">Rete mobile</h3>
+                            <p class="mt-2 text-sm leading-6 text-gray-600">Soluzioni pensate per comunicare in mobilità, con particolare attenzione alla protezione delle informazioni e dei dati di aziende e Pubbliche Amministrazioni.</p>
+                            <button class="mt-4 custom-button text-blue-700 py-2 px-4  flex items-center rounded-full">
+                                Scopri di più
+                                <svg class="w-4 h-4 ml-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+    
+                    <!-- Card 3 -->
+                    <article class="card bg-white shadow-lg rounded-lg overflow-hidden flex-shrink-0 w-96">
+                        <img src="img/Mask group (1).png" alt="Esempio 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold leading-6 text-gray-900">Linea internazionale</h3>
+                            <p class="mt-2 text-sm leading-6 text-gray-600">Servizi di connettività per multinazionali e aziende all’Estero, con una presenza diretta in 32 Paesi e un network di oltre 600.000 km in fibra.</p>
+                            <button class="mt-4 custom-button text-blue-700 py-2 px-4 flex items-center rounded-full">
+                                Scopri di più
+                                <svg class="w-4 h-4 ml-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+    
+                    <!-- Card 4 (hidden) -->
+                    <article id="card4" class="card bg-white shadow-lg rounded-lg overflow-hidden flex-shrink-0 w-96">
+                        <img src="img/mask-group.png" alt="Esempio 4" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold leading-6 text-gray-900">Managed and Professional Services</h3>
+                            <p class="mt-2 text-sm leading-6 text-gray-600">Soluzioni efficaci e affidabili e servizi di caring per l’infrastruttura digitale delle aziende gestito da personale qualificato e alta professionalità.</p>
+                            <button class="mt-4 custom-button text-blue-700 py-2 px-4 flex items-center rounded-full">
+                                Scopri di più
+                                <svg class="w-4 h-4 ml-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!--Offerte di servizi-->
+
+    <section class="  p-4 bg-white">
+        <div class="flex bg-white  overflow-hidden">
+            <div class="w-1/2 p-6 text-center ">
+                <h1 class="text-2xl  text-blue-900  italic">Le infrastrutture di Connettività</h1>
+                <p class="mt-4 text-gray-700 w-96 ml-36 font-light">I servizi TIM Enterprise sono la risposta all’esigenza diffusa di connettività veloce, sia fissa che mobile. Offerte flessibili e scalabili per garantire servizi di alto livello, sempre adattabili alle diverse realtà del mercato. Infrastrutture altamente performanti, progettate per supportare la domanda sempre crescente di traffico dati, anche su scala internazionale.</p>
+            </div>
+            <div class="w-1/2 p-6 flex justify-center items-center">
+                <img src="/img/5 1.png" alt="Immagine" class="w-3/4 rounded-lg">
+            </div>
+        </div>
+        <div class="text-center mt-10 relative-wrapper">
+            <h1 class="text-9xl text-gray-200 font-bold absolute-overlay">Offerte di Servizi</h1>
+            <h2 class="text-3xl text-blue-900 font-bold absolute-overlay">I servizi di connettività sono a disposizione di aziende e PA<br>per sviluppare il business e realizzare la transizione digitale.</h2>
+        </div>
+    </section>
+    <!-- Testimonianze -->
+    
+    <section class="bg-cover bg-center mx-auto mt-24 p-4 space-y-10" style="background-image: url('img/Rectangle\ 1.png');">
+        <div class="flex rounded-lg overflow-hidden  text-white">
+            <div class="w-1/2 p-8 flex flex-col justify-center  text-balance">
+                <h1 class="text-3xl font-bold mb-6">Perché scegliere le soluzioni TIM Enterprise</h1>
+                <ul id="menu" class="space-y-4">
+                    <li class="hover:underline cursor-pointer" data-target="offering">All-In-One-Offering</li>
+                    <li class="hover:underline cursor-pointer" data-target="capillarita">Capillarità</li>
+                    <li class="hover:underline cursor-pointer" data-target="competenza">Competenza</li>
+                    <li class="hover:underline cursor-pointer" data-target="innovazione">Innovazione</li>
+                </ul>
+            </div>
+            <div class="dividi"></div>
+            <div class="w-1/2 relative">
+                <div id="offering" class="content-section active">
+                    <img src="/img/layout-1.png" alt="Server Room" class="w-full h-full opacity-70">
+                    <div class="p-8">
+                        <h2 class="text-2xl font-bold">All-In-One-Offering</h2>
+                        <p class="mt-4 text-sm">TIM Enterprise è oggi il solo operatore in Italia con un’offerta completa, capace di spaziare dallo fissa a quella mobile, dai Data Center all’IoT, alla Cybersecurity al Metaverso.</p>
+                    </div>
+                </div>
+                <div id="capillarita" class="content-section">
+                    <img src="/img/layout-2.png" alt="Landscape" class="w-full h-full opacity-70">
+                    <div class="p-8">
+                        <h2 class="text-2xl font-bold">Capillarità</h2>
+                        <p class="mt-4 text-sm">Rete Mobile, Fibra, Network e Data Center presenti sull’intero territorio nazionale in modo capillare, con una squadra di consulenti e tecnici dedicati ad aziende e Amministrazioni.</p>
+                    </div>
+                </div>
+                <div id="competenza" class="content-section">
+                    <img src="/img/layout-3.png" alt="Handshake" class="w-full h-full opacity-70">
+                    <div class="p-8">
+                        <h2 class="text-2xl font-bold">Competenza</h2>
+                        <p class="mt-4 text-sm">Un know-how consolidato, anche grazie alla competenza delle company del Gruppo TIM (Noovle, Olivetti, Sparkle e Telsy) e a partnership di qualità come quella con Google Cloud.</p>
+                    </div>
+                </div>
+                <div id="innovazione" class="content-section">
+                    <img src="/img/layout-4.png" alt="Innovation" class="w-full h-full opacity-70">
+                    <div class="p-8">
+                        <h2 class="text-2xl font-bold">Innovazione</h2>
+                        <p class="mt-4 text-sm">Soluzioni Cloud, IoT, Cybersecurity, Fibra e Mobile di ultima generazione, che nascono da hub e Centri di Innovazione al 100% TIM per aiutare la crescita digitale delle aziende.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chiamata all'azione -->
+    <section class="bg-white- text-blue-900 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl  mb-4 font-light">Desideri avere più informazioni sui nostri servizi?</h2>
+            <p class="mb-8 text-xl ">Parla con un nostro esperto</p>
+            <a href="#" class="inline-block mx-auto w-60 bg-gradient-to-br from-blue-700 to-red-600 hover:from-blue-800 hover:to-red-700 text-white font-bold py-2 px-6 md:px-4 rounded">
+                Richiedi Contatto
+            </a>
+        </div>
+    </section>
+
+    <!--Pre footer-->
+    <footer class="bg-blue-900 text-white py-2 ">
+        <div class=" mx-10 flex justify-between items-center">
+                <ul class="flex space-x-4 flex items-center text-xs">
+                    <img src="/img/co2-emission-zero-web-carbon-neutral 1.png" alt="" srcset="">
+                    <li class="group">TIM Enterprise è un sito carbon neutral 
+                        <a href="#" class=" inline-flex  font-bold  underline"> &nbsp;scopri di piu &nbsp;</a>
+                    </li>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 TIM Enterprise. Tutti i diritti riservati.</p>
+            <p class="mt-2"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Termini di servizio</a></p>
+        </div>
+    </footer>
+      
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman', serif;
+}
+
+    /* Stili per il dropdown */
+    .submenu {
+        
+        width: 100vw;
+        height: 50vh;
+        
+        top: 0;
+        left: 0;
+        right: 0;
+      
+        display: none;
+        opacity: 0;
+        
+        transition: opacity 0.3s ease;
+        z-index: 50; 
+    }
+
+    /* Mostra il dropdown quando il gruppo è in hover */
+    .group:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
+    .group .dropdown-trigger svg {
+        transition: transform 0.3s ease;
+        transform: rotate(0deg);
+    }
+    .group:hover .dropdown-trigger svg {
+        transform: rotate(180deg);
+    }
+
+
+        .divider {
+            border-left: 2px solid blue;
+            height: 24px;
+            margin: 0 8px;
+        }
+        .dividi{
+            border-left: 2px solid white;
+            height: 550px;
+            margin: 0 8px;
+        }
+        .hero{
+            height: 460px;
+        }
+        .custom-button {
+            border-radius: 999px; 
+            background-color: #FFFFFF;
+            border-width: 1px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #1E40AF, #EF4444);
+            border-image-slice: 1;
+            box-shadow: none;
+        }
+        
+        #cardContainer {
+    overflow-x: hidden; /* Nasconde la scrollbar orizzontale */
+}
+.cardh{
+    height: 567px;
+}
+
+.relative-wrapper {
+            position: relative;
+            width: 100%;
+            height: 80px; /* Adjust height as needed to fit two lines of text */
+        }
+        .absolute-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .absolute-overlay h2 {
+            display: block;
+            line-height: 1.2em;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4C4CF1 0%, #982CEA 100%);
+        }
+        .highlighted {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 2px 4px;
+        }
+        .hidden {
+            display: none;
+        }
+        .block {
+            display: block;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+    
