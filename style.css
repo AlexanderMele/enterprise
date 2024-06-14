@@ -40,7 +40,7 @@ body {
         }
         .dividi{
             border-left: 2px solid white;
-            height: 550px;
+            height: auto;
             margin: 0 8px;
         }
         .hero{
